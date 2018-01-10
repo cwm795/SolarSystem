@@ -22,7 +22,7 @@ console.log(planetUppercase,"test")
 // Use the filter method to create a new array that contains planets with the letter 'e'
 let planetFilter = planets.filter(planetItem => {
 
-    planetItem.length = "e";
+   return planetItem.includes("e");
 })
 
 console.log(planetFilter, "filtering");
