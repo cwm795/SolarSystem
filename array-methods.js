@@ -19,15 +19,21 @@ var planetUppercase = planets.map(
 console.log(planetUppercase,"test")
 
 
-
-
-// planets = planets.map( (str) => {
-//     el.innerHTML = `<h3>${planets}</h3>`;
-// })
-
-
 // Use the filter method to create a new array that contains planets with the letter 'e'
+let planetFilter = planets.filter(planetItem => {
+
+    planetItem.length = "e";
+})
+
+console.log(planetFilter, "filtering");
 
 // Use the reduce method to create a sentence from the words in the following array
 
 var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+
+let wordReducer = words.reduce( (total, word) => {
+    return total + " " + word;
+
+})
+
+console.log(wordReducer);
